@@ -1,0 +1,143 @@
+body{
+    margin:0;
+	width: 100%;
+    height: 100%;
+    background: linear-gradient(to right,white 50%,#ede0df 50% );
+}
+
+
+.wrapper {
+	width: 1920px;
+	height: 974px;
+	margin: 0 auto;
+
+}
+.header {
+
+		&__row { 
+            display: grid;
+			grid-template-columns: 1fr 1fr 1fr;
+			padding-top: 40px;
+			a{
+				color: #000;
+				text-decoration: none;
+			}
+		}
+
+		&__previous {
+
+		   font-size: 24px;
+           opacity: 0.5;
+		   text-decoration: underline;
+		}
+
+		&__title {
+			font-size: 20px;
+			text-transform: capitalize;
+			justify-self:  center;
+			margin:0;
+		}
+
+		&__next {
+			opacity: 0.5;
+			justify-self: end;
+			font-size: 24px;
+			margin-right: 30px;
+			text-decoration: underline;
+		}
+
+		&__previous::before {
+			width: 70px;
+			content: '';
+			position:absolute;
+			border-top: 1px solid black;
+			top: 4.5%;
+			left: 160px;
+		 }
+		 &__next::after {
+			width: 70px;
+			content: '';
+			position:absolute;
+			border-top: 1px solid black;
+			top: 4.5%;
+			right: 190px;
+		}
+}
+.content {
+		margin-bottom: 50px;
+		&__row {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+
+		}
+
+		&__body {
+			
+			display: grid;
+			grid-template-columns: 2fr 200px;
+		}
+
+		&__title {
+			font-size: 96px;
+			margin-top: 200px;
+			margin-left: 100px;
+		}
+
+		&__text {
+			
+			align-self: flex-end;
+		}
+
+
+		&__text::before {
+			width: 220px;
+			content: '';
+			position:absolute;
+			border-top: 1px solid black;
+			top: 62%;
+			left: 1000px;		
+		}
+
+		&__image {
+			justify-self: center;
+			max-width: 100%;
+			height: auto;
+		
+		}
+}
+.footer {
+		margin-top: 0;
+		&__container{
+			width: 985px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+
+		&__data {
+			font-size: 12px;
+		}
+
+		&__author {
+			font-size: 12px;
+		}
+
+		&__text {
+			font-size: 24px;
+			opacity: 0.5;
+			text-decoration: underline;
+			a{
+				color: #000;
+				text-decoration: none;
+			}
+		}
+
+		&__data::after{
+			width: 350px;
+			content: '';
+			position:absolute;
+			border-top: 1px solid black;
+			top: 93.7%;
+			left: 320px;
+		}
+}
